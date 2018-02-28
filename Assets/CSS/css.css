@@ -1,0 +1,60 @@
+html {
+    height: 100%;
+}
+
+
+body {
+    background:
+    linear-gradient(
+        rgba(31, 31, 31, 0.45), 
+        rgba(1, 1, 1, 0.45)
+      ),
+      url(/Users/briawalker/Desktop/Portfolio/myPortfolio/Assets/Images/INDEX.jpg);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+}
+
+.name {
+    font-family: "Anton";
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: "Open Sans Condensed";
+    text-transform: uppercase;
+    font-style: italic;
+    color: #fff799;
+    margin-top: -10px;
+}
+
+.quote {
+    font-family: "Space Mono";
+    color: white;
+    font-size: 25px;
+}
+
+strong {
+    color: #fff799;
+}
+
+.malcom {
+    font-family: "Open Sans Condensed";
+    color: #fff799;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#home-btn{
+    background-color: #fff799;
+    color: #333;
+    font-family: "Oswald";
+    text-transform: uppercase;
+}

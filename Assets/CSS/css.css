@@ -1,9 +1,12 @@
 html {
     height: 100%;
 }
-
-
+ 
 body {
+    height: 100%;
+}
+
+#home-bg {
     background:
     linear-gradient(
         rgba(31, 31, 31, 0.45), 
@@ -13,8 +16,8 @@ body {
     
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    margin: 0;
+    height: 100%;
+    margin-bottom: -20px;
 }
 
 .name {
@@ -44,7 +47,7 @@ strong {
 
 .malcom {
     font-family: "Open Sans Condensed";
-    color: #fff799;
+    color: #333;
     text-transform: uppercase;
     font-style: italic;
     font-size: 20px;
@@ -53,8 +56,84 @@ strong {
 }
 
 #home-btn{
+    background: transparent;
+    border-width:  2px;
+    border-style: solid;
+    border-color:#fff799;
+    color: white;
+    font-family: "Oswald";
+    text-transform: uppercase;
+  
+}
+
+/* End of INDEX */
+
+aside {
+    background:linear-gradient(
+        rgba(31, 31, 31, 0.45), 
+        rgba(1, 1, 1, 0.45)
+      );
+      position: fixed;
+      height: 100%;
+      text-align: center;
+      color: white;
+
+}
+
+#aside-header {
+    font-family: "Anton";
+    text-transform: uppercase;
+    float: left;
+}
+#aside-btn {
+    background-color: #fff799;
+    color: white;
+    font-family: "Oswald";
+    text-transform: uppercase;
+}
+
+#bio {
+    font-family: "Open Sans Condensed";
+    font-size: 20px;
+}
+
+#aside-nav{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.btn {
     background-color: #fff799;
     color: #333;
     font-family: "Oswald";
     text-transform: uppercase;
+    border: none;
+}
+
+#graphic-link-div{
+    margin-left: 14px;
+    height: 300px;
+    text-align: left;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: -20px;
+}
+
+#content-link-div{
+    margin-left: 14px;
+    height: 300px;
+    text-align: left;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    height: 55px;
+    width: 700px;
+    margin-top: -55px;
+    
 }

@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="../Assets/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald|Anton|Open+Sans+Condensed:300|Space+Mono" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <title>Projects • Graphics</title>
 </head>
 
@@ -19,9 +25,20 @@
         <aside class="col-xs-4 col-md-3 col-lg-3">
             <h1 id="aside-header">Graphic Design</h1>
 
-            <div id="content-nav">
-                <button id="project-btn"> Web Design </button>
-                <button id="project-btn"> Graphic Design </button>
+            <div id="flip">
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                <div id="content-nav" class="container-fluid">
+                    <div class="w-btn-div">
+                        <a href="../Public/web-design.html">
+                            <h4 id="w-btn"> Web Design      </h4>
+
+                            <a href="../Public/graphic-design.html">
+                                <h4 id="g-btn"> Graphic Design </h4>
+                            </a>
+                        </a>
+                    </div>
+
+                </div>
             </div>
 
 
@@ -38,22 +55,22 @@
             </div>
             <!-- Nav Buttons -->
             <div id="aside-nav" class="row">
-                    <div class="col-xs-3 col-md-3 col-lg-3">
-                            <a href="../Public/about.html">
-                                <button id="home-btn" class="btn btn-default"> About</button>
-                            </a>
-                        </div>
-                       
-                        <div class="col-xs-3 col-md-3 col-lg-3">
-                                <a href="../Public/projects-home.html">
-                                    <button id="home-btn" class="btn btn-default"> Project</button>
-                                </a>
-                        </div>
-                        <div class="col-xs-3 col-md-3 col-lg-3">
-                            <a href="../Public/contact.html">
-                                <button id="home-btn" class="btn btn-default"> Contact</button>
-                            </a>
-                        </div>
+                <div class="col-xs-3 col-md-3 col-lg-3">
+                    <a href="../Public/about.html">
+                        <button id="home-btn" class="btn btn-default"> About</button>
+                    </a>
+                </div>
+
+                <div class="col-xs-3 col-md-3 col-lg-3">
+                    <a href="../Public/projects-home.html">
+                        <button id="home-btn" class="btn btn-default"> Project</button>
+                    </a>
+                </div>
+                <div class="col-xs-3 col-md-3 col-lg-3">
+                    <a href="../Public/contact.html">
+                        <button id="home-btn" class="btn btn-default"> Contact</button>
+                    </a>
+                </div>
             </div>
         </aside>
 
@@ -103,12 +120,31 @@
 
 
         <footer class="footer">
-            <div class="container">
-            </div>
-            <span>Creative Square </span>
-        </footer>
+                <div class="container">
+                </div>
+                   <span>Creative Square </span>
+                   <div class="footer-icons">
+                        <i id="footer-icon" class="fa fa-github-square" aria-hidden="true"></i>
+                        <i id="footer-icon" class="fa fa-linkedin" aria-hidden="true"></i>
+                        <a href="../index.html"> <img id="footer-logo" src="../Assets/Images/white-logo.png" alt=""></a>
+                   </div>
+                  
+            </footer>
     </div>
-    <script src="Assets/javascript.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#flip").mouseenter(function () {
+                $("#content-nav").slideDown("slow");
+            });
+            
+            $("#content-nav").mouseleave(function () {
+                $("#content-nav").hide();
+            });
+
+        });
+    </script>
 </body>
 
 </html>

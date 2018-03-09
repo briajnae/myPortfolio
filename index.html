@@ -9,6 +9,11 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="Assets/styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald|Anton|Open+Sans+Condensed:300|Space+Mono" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <title>Document</title>
 </head>
 
@@ -24,10 +29,12 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4 col-lg-9">
-                <h4 class="quote">"<strong>PRACTICE</strong> isn't the thing you do when you're good.</h4>
+            <div id="quote"  class="col-md-4 col-lg-9 quote">
+                <h4 class="quote-a">"
+                    <strong>PRACTICE</strong> isn't the thing you do when you're good.</h4>
 
-                <h4 class="quote">It's the thing you do that <strong>MAKES YOU GOOD</strong>."</h4>
+                <h4 class="quote-b">It's the thing you do that
+                    <strong>MAKES YOU GOOD</strong>."</h4>
 
                 <h5 class="malcom">- Malcolm Gladwell</h5>
             </div>
@@ -35,26 +42,36 @@
 
         <!-- Nav Buttons -->
         <div class="row">
-            <div class="col-xs-3 col-md-3 col-lg-3">
+            <div class="col-xs-3 col-md-8 col-lg-8">
                 <a href="Public/about.html">
-                    <button id="home-btn" class="btn btn-default"> About</button>
+                    <button id="index-btn" class="btn btn-default"> About</button>
                 </a>
-            </div>
-           
-            <div class="col-xs-3 col-md-3 col-lg-3">
-                    <a href="Public/projects-home.html">
-                        <button id="home-btn" class="btn btn-default"> Project</button>
-                    </a>
-            </div>
-            <div class="col-xs-3 col-md-3 col-lg-3">
+
+                <a href="Public/projects-home.html">
+                    <button id="index-btn" class="btn btn-default"> Project</button>
+                </a>
+
                 <a href="Public/contact.html">
-                    <button id="home-btn" class="btn btn-default"> Contact</button>
+                    <button id="index-btn" class="btn btn-default"> Contact</button>
                 </a>
             </div>
         </div>
     </div>
 
     <script src="Assets/Javascript/javascript.js"></script>
+
+    <script>
+    
+    $(document).ready(function(){
+
+   
+
+
+
+
+});
+    
+    </script>
 </body>
 
 </html>

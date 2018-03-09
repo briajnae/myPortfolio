@@ -6,9 +6,27 @@ body {
     height: 100%;
 }
 
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
 .container {
 max-width: 100%;
 }
+
+#logo{
+    width: 5%;
+    float: right;
+    margin: 25px;
+    animation: logo 10s linear infinite;
+}
+/* 
+.logo-div {
+   
+} */
+
 #home-bg {
     background:
     linear-gradient(
@@ -38,11 +56,22 @@ max-width: 100%;
     margin-top: -10px;
 }
 
-.quote {
+.quote-a {
     font-family: "Space Mono";
     color: white;
     font-size: 25px;
+    margin-top: 150px;
+   
 }
+
+.quote-b {
+    font-family: "Space Mono";
+    color: white;
+    font-size: 25px;
+    
+}
+
+
 
 strong {
     color: #fff799;
@@ -50,13 +79,40 @@ strong {
 
 .malcom {
     font-family: "Open Sans Condensed";
-    color: #333;
+    color: white;
     text-transform: uppercase;
     font-style: italic;
     font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: right;
+    margin-right: 120px;
+    text-shadow: #333 1px 2px;
 }
+
+#index-btn{
+    
+    background-color: #fff799;
+    color: #333;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    width: 150px;
+    margin-top: 150px;
+    position: relative;
+   margin-right: 50px;
+   border-color: #fff799;
+   border-style: solid;
+   border-width: 2px; 
+
+}
+
+#index-btn:hover{
+  background: transparent;
+    color: white;
+    border-color: #fff799;
+    border-style: solid;
+    border-width: 2px;
+}
+
 
 #home-btn{
     background: transparent;
@@ -66,21 +122,31 @@ strong {
     color: white;
     font-family: "Oswald";
     text-transform: uppercase;
+    margin-left: 35px;
   
 }
 
+
+#home-btn:hover{
+    background-color: #fff799;
+    color: #333;
+}
+
 /* About */
+
 
 aside {
     background:linear-gradient(
         rgba(31, 31, 31, 0.45), 
         rgba(1, 1, 1, 0.45)
       );
-      position: fixed;
-     height: 100%;
+      position: relative;
       text-align: center;
       color: white;
+      height: 100%;
+     
 }
+
 
 #aside-header {
     font-family: "Anton";
@@ -103,7 +169,11 @@ aside {
 
 #aside-nav{
     margin-top: 200px;
-    margin-bottom: 200px;
+    position: relative;
+    height: 160%;
+   align-items: center;
+padding-bottom: 50px;
+    
     
 }
 
@@ -115,8 +185,191 @@ aside {
     border: none;
 }
  
+#about-img{
+    width: 30%;
+    margin-left: 360px;
+    margin-top: 70px;
+    position: relative;
+}
+
+.about-btn-div{
+   background-color: rgb(77, 76, 76);
+   height: 100px;
+   width: 350px;
+   margin-left: 350PX;
+   margin-top: -1px;
+   position: relative;
+   border-radius: 3px; 
+}
+
+#more-info {
+    margin-left: 75px;
+    margin-top: 30px;
+    padding: 10px; 
+}
+
+#skill-title{
+   text-align: left;
+    font-size: 13px;
+   color: white;
+   text-transform: uppercase;
+ 
+ 
+
+}
+
+.skills-div{
+    height: 100%;
+    width: 400px;
+    background:linear-gradient( to bottom right,
+    #4b6cb7, 
+    #182848
+      );
+    padding: 10px; 
+     
+}
+
+
+
+#css-bar{
+    width: 20px;
+    background-color: white;
+    height: 30px;
+    transition: width 2s;
+    padding: 0;
+    text-align: right;
+    font-style: italic;
+    font-size: 10px;
+    padding-right: 2px;
+    position: relative;
+}
+
+#css-bar:hover{
+width: 75%;
+background-color: bisque;
+color: #333;
+ transition-timing-function: ease-in-out;
+}
+#java-bar{
+    width: 20px;
+    background-color: white;
+    height: 30px;
+    transition: width 2s;
+    padding: 0;
+    text-align: right;
+    font-style: italic;
+    font-size: 10px;
+    padding-right: 2px;
+    position: relative;
+}
+
+#java-bar:hover{
+    width: 65%;
+    background-color: bisque;
+    color: white;
+    transition-timing-function: ease-in-out;
+    }
+
+#bs-bar{
+    width: 20px;
+    background-color: white;
+    height: 30px;
+    transition: width 2s;
+    padding: 0;
+    padding: 0;
+    text-align: right;
+    font-style: italic;
+    font-size: 10px;
+    padding-right: 2px;
+    position: relative;
+}
+
+#bs-bar:hover{
+    width: 75%;
+    background-color: bisque;
+    color: white;
+    transition-timing-function: ease-in-out;
+    }
+
+
+#photo-bar{
+    width: 20px;
+    background-color: white;
+    height: 30px;
+    transition: width 2s;
+    padding: 0;
+    padding: 0;
+    text-align: right;
+    font-style: italic;
+    font-size: 10px;
+    padding-right: 2px;
+    position: relative;
+}
+
+#photo-bar:hover{
+    width: 90%;
+    background-color: bisque;
+    color: white;
+    transition-timing-function: ease-in-out;
+    }
+
+#ill-bar{
+    width: 20px;
+    background-color: white;
+    height: 30px;
+    transition: width 2s;
+    padding: 0;
+    text-align: right;
+    font-style: italic;
+    font-size: 10px;
+    padding-right: 2px;
+    position: relative;
+}
+
+#ill-bar:hover{
+    width: 80%;
+    background-color: bisque;
+    color: white;
+    transition-timing-function: ease-in-out;
+    }
+
+#ae-bar{
+    width: 20px;
+    background-color: white;
+    height: 30px;
+    transition: width 2s;
+    padding: 0;
+    text-align: right;
+    font-style: italic;
+    font-size: 10px;
+    padding-right: 2px;
+    position: relative;
+    
+}
+
+#ae-bar:hover{
+    width: 60%;
+    background-color: bisque;
+    color: white;
+    transition-timing-function: ease-in-out;
+    }
+
 
 /* Projects */
+#content-link{
+    text-decoration: none;
+}
+
+#graphic-link {
+    text-decoration: none;
+    color: #333;
+}
+
+ #content-link {
+    text-decoration: none;
+    color: #333;
+}
+
 
 #graphic-link-div{
     margin-left: 14px;
@@ -130,12 +383,13 @@ aside {
     margin-top: 45px;
     border-radius: 0;
     width: 100%;
-   
+    margin-top: 66px;
+
 }
 
 #content-link-div{
     margin-left: 14px;
-    height: 330px;
+    height: 350px;
     text-align: left;
     font-family: "Oswald";
     text-transform: uppercase;
@@ -143,9 +397,78 @@ aside {
     width: auto;
     border-radius: 0;
     width: 100%;
-
+    
     
 }
+
+ #flip, .glyphicon-menu-down {
+    text-align: center;
+    background: transparent;
+    border:none;
+    margin-bottom: 15px;
+}
+
+#content-nav {
+    display: none;
+  
+
+}
+
+#w-btn {
+font-family: "Open Sans Condensed";
+color: white;
+background: transparent;
+text-transform: uppercase;
+position: relative;
+font-size: 20px;
+text-align: right;
+}
+
+#g-btn {
+    font-family: "Open Sans Condensed";
+    color: white;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: right;
+    position: relative;
+ 
+  
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#w-btn:hover{
+color: rgb(95, 156, 136);
+background-color: #333;
+width: 112%;
+margin-left: -16px;
+padding-right: 10px;
+box-shadow: #777 2px 2px 2px;
+font-style: italic; 
+
+}
+
+
+#g-btn:hover{
+    color: rgb(126, 146, 167);
+    background-color: #333;
+    width: 112%;
+margin-left: -16px;
+padding-right: 10px;
+box-shadow: #777 2px 2px 2px;
+font-style: italic; 
+}
+
+
+.w-btn-div{
+    margin-bottom: 0;
+    width: 100%;
+}
+
+
 
 
 /* Footer */
@@ -153,10 +476,29 @@ footer {
     background-color: #333;
     color: white;
    width: 100%;
-   position: absolute;
+   position: fixed;
    bottom: 0;
    height: 60px;
-   margin-left: -15px;
+   text-align: center;
+
+}
+
+.footer-icons{
+   float: right;
+   margin-right: 20px;
+   margin: 10px;
+   
+}
+
+#footer-logo{
+    width: 30px;
+    margin-left: 8px;
+}
+
+#footer-icon{
+    font-size: 30px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 
@@ -188,12 +530,15 @@ img {
     font-family: "Oswald";
     text-transform: uppercase;
     font-style: italic;
-    background-color: rgb(95, 156, 136);;
+    background-color: rgb(95, 156, 136);
     width: auto;
     margin-top: 45px;
     border-radius: 0;
     width: 100%;
+    
 }
+
+/* Graphic Design */
 
 #graphics-link-div{
     margin-left: 15px;
@@ -202,28 +547,94 @@ img {
     font-family: "Oswald";
     text-transform: uppercase;
     font-style: italic;
-    background-color: rgb(126, 146, 167);;
+    background-color: rgb(126, 146, 167);
     width: auto;
     margin-top: 45px;
     border-radius: 0;
     width: 100%;
+    
+}
+
+#content-bg {
+position: relative;
 }
 
 /* Contact */
 
+
+#contact-img {
+    position:absolute;
+    z-index:1}
+
+    #contact-div img.active{
+        z-index:3}
+
 #contact-div{
-    
     height: 400px;
-    text-align: left;
-    font-family: "Oswald";
+    border-radius: 0;
+    padding: 0; 
+    width: 100%; 
+    position: relative;
+} 
+.carousel-inner {
+    padding: 0;
+    margin: 0;
+}
+
+#contact-link{
+    position: absolute;
+}
+
+
+.mapouter {
+   margin-left: 65px;
+   margin-top: 35px;
+}
+
+#contact-info{
+ background-color: rgb(197, 139, 122);
+  height: 380px;
+  margin-top: -20px;
+ 
+  position:relative;
+}
+
+.hi {
+    color: white;
+    font-family: "Open Sans Condensed";
+    font-size: 20px;
     text-transform: uppercase;
     font-style: italic;
-    background-color: rgb(95, 156, 136);;
-    width: auto;
-    margin-top: 45px;
-    border-radius: 0;
-    width: 100%;
+}
+
+#icon-div {
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+#icon {
+ margin: 15px;
+    font-size: 40px;
+    color: white;
+}
+.remove {
+    display: none;
+}
+
+#carousel{
+position: fixed;
+margin: 5px;
 }
 
 
 
+/* KEY FRAMES */
+
+@keyframes logo {
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(360deg);}
+}
+
+  

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../Assets/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald|Anton|Open+Sans+Condensed:300|Space+Mono" rel="stylesheet">
-
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -25,65 +25,65 @@
                 <h1 class="web-title">WEB DESIGN</h1>
             </div>
 
+            <div id="web-back">
+                <a href="../index.html">    <i class="fas fa-long-arrow-alt-left"></i> <button id="web-back-btn">BACK</button></a>
+            </div>
+
             <div class="row" id="web-row">
                 <div class="col-md-6 col-lg-6" id="web">
                     <img class="img-responsive"  src="../Assets/Images/psychic-game.png" alt="" />
                     <h4 id="website-title">Mystery Letter Game</h4>
                     <p id="website-description">Test your luck, and see how many correct letters you can guess in a row.</p>
+                    <p id="web-details"><i class="far fa-question-circle"></i> This website was built using HTML/CSS and JavaScript</p>
                     <a href="https://briajnae.github.io/Psychic-Game/">   <button class="preview-btn btn btn-block">preview</button></a>
                 </div>
                 <div class="col-md-6 col-lg-6" id="web">
                     <img class="img-responsive"  src="../Assets/Images/trip-buddy.png" alt="" />
                     <h4 id="website-title">Trip Buddy</h4>
-                    <p id="website-description">Test your luck, and see how many correct letters you can guess in a row.</p>
+                    <p id="website-description">TripBuddy lets you create and save packing lists for upcoming trips, and displays trip weather based on the trip's destination and travel dates.</p>
+                    <p id="web-details"><i class="far fa-question-circle"></i> This website was built using Bootstrap, jQuery and JavaScript 
+                        <br> <b>Lead UI designer</b> </p>
                     <a href="https://laurencantlin.github.io/Packing-List/">  <button  class="preview-btn btn btn-block">preview</button></a>
                 </div>
-                <div class="col-md-6 col-lg-6" id="web">
-                        <img class="img-responsive"  src="../Assets/Images/housewives-showdown.png" alt="" />
-                        <h4 id="website-title">Trip Buddy</h4>
-                        <p id="website-description">Test your luck, and see how many correct letters you can guess in a row.</p>
-                        <a href="https://laurencantlin.github.io/Packing-List/">  <button  class="preview-btn btn btn-block">preview</button></a>
-                </div>
 
-            </div>
+                    <div class="col-md-6 col-lg-6" id="web">
+                            <img class="img-responsive"  src="../Assets/Images/housewives-showdown.png" alt="" />
+                            <h4 id="website-title">Housewives Showdown</h4>
+                            <p id="website-description">Drama never seems to miss these housewives. See who's the sassiest of them all with this Atlanta Housewives inspired RPG web game.</p>
+                            <p id="web-details"><i class="far fa-question-circle"></i> This website was built using Bootstrap, jQuery and JavaScript</p>
+                            <a href="https://briajnae.github.io/week-4-game/">  <button  class="preview-btn btn btn-block">preview</button></a>
+                    </div>
+                    <div class="col-md-6 col-lg-6" id="web">
+                        <img class="img-responsive"  src="../Assets/Images/homey.png" alt="" />
+                        <h4 id="website-title">Homey</h4>
+                        <p id="website-description">Homey is a user-friendly web application to help Chicagoans find affordable rental housing developments within the city.</p>
+                        <p id="web-details"><i class="far fa-question-circle"></i> This website was built using Bootstrap, jQuery, mySQL, Node.js, and JavaScript 
+                            <br> <b>Project Manager • lead UI designer </b></p>
+                        <a href="https://homey-app-bjs.herokuapp.com/">  <button  class="preview-btn btn btn-block">preview</button></a>
+                    </div>
 
-            
 
         </div>
 
 
 
-
+       
 
 
 
         <footer class="footer">
             <div class="container">
             </div>
-            <span>Creative Square </span>
+           
             <div class="footer-icons">
-                <i id="footer-icon" class="fa fa-github-square" aria-hidden="true"></i>
-                <i id="footer-icon" class="fa fa-linkedin" aria-hidden="true"></i>
-                <a href="../index.html">
-                    <img id="footer-logo" src="../Assets/Images/white-logo.png" alt="">
-                </a>
+                    <a href="https://github.com/briajnae">    <i id="footer-icon" class="fab fa-github-square" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/briajwalker">   <i id="footer-icon" class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="../index.html"> <img id="footer-logo" src="../Assets/Images/white-logo.png" alt=""></a>
             </div>
 
         </footer>
     </div>
 
-    <script>
-        $(document).ready(function () {
-            $("#flip").mouseenter(function () {
-                $("#content-nav").slideDown("slow");
-            });
-
-            $("#content-nav").mouseleave(function () {
-                $("#content-nav").hide();
-            });
-
-        });
-    </script>
 
 </body>
 

@@ -10,41 +10,42 @@
     <link rel="stylesheet" type="text/css" href="../Assets/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald|Anton|Open+Sans+Condensed:300|Space+Mono" rel="stylesheet">
-
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <title>Projects • Graphics</title>
+    <title> Graphic Design</title>
 </head>
 
 <body>
     <div class="container-fluid">
 
         <div class=" row  div-holder">
-            <div class=" col snap" id="main">
-                    <h3 id="graph-header">FILTERS</h3>
-                    <a href="./graphic-work.html"> <img class="img-responsive" id="sc-intro" src="../Assets/Images/SC-intro.png" alt="SnappChat & Instagram filters"></a>
-            </div>
+         
             <div class=" col-xs-6 col-md-12 col-lg-12 business">
                 <h3 id="graph-header">BUSINESS</h3>
-                <a href="./graphic-work.html"> <img class="img-responsive" id="business-intro" src="../Assets/Images/business-intro.png" alt="SnappChat & Instagram filters"></a>
+                <a href="./business-designs.html"> <img class="img-responsive" id="business-intro" src="../Assets/Images/business-intro.png" alt="SnappChat & Instagram filters"></a>
             </div>
              <div class=" col-xs-6 col-md-12 col-lg-12 freelance">
                     <h3 id="graph-header">FREELANCE</h3>
-            <a href="./graphic-work.html"> <img class="img-responsive" id="freelance-intro" src="../Assets/Images/girlboss.jpg" alt="SnappChat & Instagram filters"></a>
-            <button>VIEW ALL</button>
+            <a href="./freelance-designs.html"> <img class="img-responsive" id="freelance-intro" src="../Assets/Images/girlboss.jpg" alt="SnappChat & Instagram filters"></a>
+     
+            <div id="grap-back" class="col">
+                    <a href="../index.html">    <i id="graph-arrow" class="fas fa-long-arrow-alt-left"></i> <button id="graph-back-btn">BACK</button></a>
+            </div>
             </div>
             
+
         </div>
 
 
         <footer class="footer">
                 
-                   <span>Creative Square </span>
+                   
                    <div class="footer-icons">
-                        <i id="footer-icon" class="fa fa-github-square" aria-hidden="true"></i>
-                        <i id="footer-icon" class="fa fa-linkedin" aria-hidden="true"></i>
+                        <a href="https://github.com/briajnae">    <i id="footer-icon" class="fab fa-github-square" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/briajwalker">   <i id="footer-icon" class="fab fa-linkedin" aria-hidden="true"></i></a>
                         <a href="../index.html"> <img id="footer-logo" src="../Assets/Images/white-logo.png" alt=""></a>
                    </div>
                   
@@ -52,18 +53,6 @@
     </div>
 
 
-    <script>
-        $(document).ready(function () {
-            $("#flip").mouseenter(function () {
-                $("#content-nav").slideDown("slow");
-            });
-            
-            $("#content-nav").mouseleave(function () {
-                $("#content-nav").hide();
-            });
-
-        });
-    </script>
 </body>
 
 </html>

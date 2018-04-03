@@ -20,20 +20,39 @@ max-width: 100%;
     width: 5%;
     float: right;
     margin: 25px;
-    animation: logo 10s linear infinite;
+    animation: logo 10s linear infinite; 
 }
 .name{
     color: white;
+   
     font-size: 40px;
     font-family: "Space mono";
     text-transform: uppercase;
+    background: linear-gradient(270deg, #f0b255 , #a5e89a, #9ae8db, #6995ee, #ca69ee, #ff42a4);
+    animation: AnimationName 7s ease infinite;
+    background-size: 200% 200%;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 550%;
 }
+
+
+@keyframes AnimationName { 
+    to{
+        background-position: 200% center; 
+    }
+    0%{background-image:0% 50%}
+    50%{background-image:100% 50%}
+    100%{background-image:0% 50%}
+}
+
 
 #home-bg {
     background:
     linear-gradient(
-        rgba(31, 31, 31, 0.45), 
-        rgba(1, 1, 1, 0.45)
+        rgba(185, 185, 185, 0.219), 
+        rgba(228, 214, 214, 0.26)
       ),
       url(../Assets/Images/INDEX.jpg);
     
@@ -43,22 +62,23 @@ max-width: 100%;
     margin-bottom: -20px;
 }
 i{
-    color: #fff799;
+    color: #a3a1a1;
+ 
 }
 .contact-label{
     font-family: "Space mono";
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     margin-left: 25px;
     margin-top: 3px;
-    color: white;
+    color: #333;
 }
 
 .contact-labela{
     font-family: "Space mono";
     font-size: 18px;
     text-align: center;
-    margin-left: 19px;
+    margin-left: 18px;
     margin-top: 3px;
     color: white;
 }
@@ -72,18 +92,19 @@ i{
 
 #icon{
    font-size:20px;
-   color: white;
+   color: #333;
 }
 
 #icon:hover{
-
-    color: #fff799;
+background: black;
+    color: white;
+    text-decoration: none;
  }
 
 #bio {
     font-family: "Vidaloka";
-    font-size: 35px;
-    color: white;
+    font-size: 45px;
+    color: #333;
 }
 
 
@@ -93,121 +114,27 @@ i{
     font-family: "Oswald";
     text-transform: uppercase;
     border: none;
+   
 }
- 
+ #nav-div{
+margin-top: 2%;
+margin-left: 80px;;
 
+ }
 
-/* Projects */
-#content-link{
-    text-decoration: none;
-}
-
-#graphic-link {
-    text-decoration: none;
-    color: #333;
-}
-
- #content-link {
-    text-decoration: none;
-    color: #333;
-}
-
-
-#graphic-link-div{
-    margin-left: 14px;
-    height: 350px;
-    text-align: left;
-    font-family: "Oswald";
-    text-transform: uppercase;
-    font-style: italic;
-    background-color: #fff799;
-    width: auto;
-    margin-top: 45px;
-    border-radius: 0;
-    width: 100%;
-    margin-top: 66px;
-
-}
-
-#content-link-div{
-    margin-left: 14px;
-    height: 350px;
-    text-align: left;
-    font-family: "Oswald";
-    text-transform: uppercase;
-    font-style: italic;
-    width: auto;
-    border-radius: 0;
-    width: 100%;
-    
-    
-}
-
- #flip, .glyphicon-menu-down {
-    text-align: center;
+#index-btn{
     background: transparent;
-    border:none;
-    margin-bottom: 15px;
-}
-
-#content-nav {
-    display: none;
-}
-
-#w-btn {
-font-family: "Open Sans Condensed";
-color: white;
-background: transparent;
-text-transform: uppercase;
-position: relative;
-font-size: 20px;
-text-align: right;
-}
-
-#g-btn {
-    font-family: "Open Sans Condensed";
-    color: white;
-    background: transparent;
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: right;
-    position: relative;
+    color: #333;
+    border: none;
+   margin: 20px;
  
-  
+    font-size: 10px;
 }
 
-a:hover{
-    text-decoration: none;
+#index-btn:hover{
+   background: black;
+   color: white;
 }
-
-#w-btn:hover{
-color: rgb(95, 156, 136);
-background-color: #333;
-width: 112%;
-margin-left: -16px;
-padding-right: 10px;
-box-shadow: #777 2px 2px 2px;
-font-style: italic; 
-
-}
-
-
-#g-btn:hover{
-    color: rgb(126, 146, 167);
-    background-color: #333;
-    width: 112%;
-margin-left: -16px;
-padding-right: 10px;
-box-shadow: #777 2px 2px 2px;
-font-style: italic; 
-}
-
-
-.w-btn-div{
-    margin-bottom: 0;
-    width: 100%;
-}
-
 
 
 
@@ -246,29 +173,46 @@ footer {
 /* Web Design ##################################################*/
 
 .web-title{
+    background-image: linear-gradient(to top,#ec008c, #fc6767);
     font-family: "Space mono";
-    font-size:150px; 
+    font-size:650%; 
     position: absolute;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .web-title-div{
    margin-left: 5%;
 }
 
-#web-div{
-    position: relative;
-    background: #182848;
+
+#web-back{
+    float: right;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 3%;
 }
 
-#web{
-   
-   display: block;
-   margin-top: 10%;
-  
+#web-back-btn{
+    background: transparent;
+    border: none;
+    font-family: "Space mono";
+    font-size: 15px;
+    color: #333;
+}
+
+#web-back-btn:hover{
+    background: black;
+    color: white;
+    border: none;
+    font-family: "Space mono";
+    font-size: 15px;
 }
 
 #web-row{
-    margin-top: 0;
+    margin-top: 5%;
+    margin-left: -4%;
 }
 
 #website-title{
@@ -286,38 +230,60 @@ footer {
     font-size: 15px;
 }
 
+#web-details{
+   font-size: 11px;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #6995ee;
+    
+}
+
+
 .preview-btn{
    
     margin-bottom: 15%;
     font-family: "Oswald";
     text-transform: uppercase;
     font-size: 15px;
-    ;
-
 }
 
 /* Graphic Design ##################################################*/
 
-
-#graphd-bg{
-    background: linear-gradient(150deg, #452bda, #77d6b2);
-    height: 100%;
+#graph-back{
    
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top: 3%;
 }
 
-#graphd-container{
-    background: #f7f7f7;
-    width: 97%;
-    margin-bottom: 50px;
+#graph-back-btn{
+    background: black;
+    border: none;
+    font-family: "Space mono";
+    font-size: 15px;
+    color: white;
   
 }
 
-.graphTitle{
-    font-size: 80px;
+#graph-back-btn:hover{
+    background: white;
+    color: #333;
+    border: none;
     font-family: "Space mono";
-    text-transform: uppercase;
+    font-size: 15px;
+
+}
+
+#graph-arrow{
+    margin-left: 80%;
+}
+
+
+
+#graph-header{
+    font-family: "Space mono";
+    font-size: 250%;
+    text-align: center;
 }
 
 .div-holder{
@@ -328,34 +294,18 @@ footer {
     align-items: stretch;
 }
 
-
-
-.snap{
-    width: 100%; 
-   height: 800px; 
-   position: relative;
-   background: rgb(219, 219, 219);
-}
-
-.snap:hover{
-    width: 100%; 
-    background: #444; 
-}
-
-#sc-intro{
-   width: 100%;
-   margin-top: 25%;
-}
-
 #business-intro{
-    width: 100%;
-    margin-top: 35%;
+    width: 75%;
+    margin-top: 15%;
+    margin-left: 12%;
+    margin-bottom: 10%;
  }
 
  #freelance-intro{
-    width: 80%;
-    margin-top: 35%;
-    margin-left: 12%;
+    width: 65%;
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-bottom: 10%;
  }
 
 .business{
@@ -367,7 +317,9 @@ footer {
 
 .business:hover{
     width: 100%;   
-    background: #fff799; 
+    background: #fff799;
+    color: white; 
+    text-shadow: 2px 2px 8px #000000a9;
 }
 
 .freelance{
@@ -381,57 +333,166 @@ footer {
 .freelance:hover{
     width: 100%;  
     background: #4b6cb7; 
+    color: white; 
+    text-shadow: 2px 2px 8px #000000a9;
     
 }
 
-#filter:hover + #descript-div{
-    display: block;
-width: 60%;
-margin-top:-40%;
-height: 45%;
-    float: right;
-    background: #452bda;
-}
-#descript-div{
-display: none;
-background: #452bda;
-}
 
-#graph-header{
 
-    color: #999999;
+
+/* FREEELANCE Design ##################################################*/
+
+.freelance-title{
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
     font-family: "Space mono";
-    text-align: center;
-    font-size: 30px;
+    font-size:650%; 
+    position: absolute;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.freelance-title-div{
+   margin-left: 5%;
 }
 
 
-
-
-
-#graphics-link-div{
-    margin-left: 15px;
-    height: 400px;
-    text-align: left;
-    font-family: "Oswald";
+#freelance-label{
+    position: relative;
+    width: 200px;
+    color: white;
+    background: #333;
+    font-family: "anton";
     text-transform: uppercase;
-    font-style: italic;
-    background-color: rgb(126, 146, 167);
-    width: auto;
-    margin-top: 45px;
-    border-radius: 0;
-    width: 100%;
-    
+    font-size: 40px;
+  padding: 5px;
+  margin-left: 3%;
+
 }
+
+#filters-row{
+   
+    margin-top: 15%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 5%;
+}
+
+#flyers-row{
+  
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top:5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+#flyer{
+    width: 15%;
+    display: inline-block;
+    float: none;
+    margin-bottom: 30px;
+}
+
 
 #filter{
-    width: 60%;
+    width: 15%;
     margin-bottom: 30px;
+    display: inline-block;
+    float: none;
 }
 
 #content-bg {
 position: relative;
 }
+
+#freelance-row{
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+
+#freelance-back{
+   float: right;
+   margin-right: 5%;
+    margin-top: 3%;
+    color: #333;
+}
+
+#freelance-back-btn{
+    background: transparent;
+    border: none;
+    font-family: "Space mono";
+    font-size: 15px;
+    color: #333;
+}
+
+.fa-long-arrow-alt-left{
+  
+  color: #333;
+}
+
+#freelance-back-btn:hover{
+    background: black;
+    color: white;
+    border: none;
+    font-family: "Space mono";
+    font-size: 15px;
+}
+
+/* BUSINESS Design ##################################################*/
+#business-row{
+  
+    margin-top: 15%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 5%;
+}
+
+.business-title{
+    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+    font-family: "Space mono";
+    font-size:550%; 
+    position: absolute;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.business-title-div{
+   margin-left: 5%;
+}
+
+#bus-back{
+ 
+float: right;
+margin-right: 5%;
+     margin-top: 3%;
+     color: #333;
+ }
+ 
+ #bus-back-btn{
+     background: transparent;
+     border: none;
+     font-family: "Space mono";
+     font-size: 15px;
+     color: #333;
+ }
+ 
+ 
+ #bus-back-btn:hover{
+     background: black;
+     color: white;
+     border: none;
+     font-family: "Space mono";
+     font-size: 15px;
+ }
+
+ #business{
+    display: inline-block;
+    float: none;
+ }
 
 /* SKILLS BAR ##################################################*/
 

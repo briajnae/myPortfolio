@@ -6,14 +6,53 @@ body {
     height: 100%;
 }
 
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
 .container {
 max-width: 100%;
 }
+
+#logo{
+    width: 5%;
+    float: right;
+    margin: 25px;
+    animation: logo 10s linear infinite; 
+}
+.name{
+    color: white;
+   
+    font-size: 40px;
+    font-family: "Space mono";
+    text-transform: uppercase;
+    background: linear-gradient(270deg, #f0b255 , #a5e89a, #9ae8db, #6995ee, #ca69ee, #ff42a4);
+    animation: AnimationName 7s ease infinite;
+    background-size: 200% 200%;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 550%;
+}
+
+
+@keyframes AnimationName { 
+    to{
+        background-position: 200% center; 
+    }
+    0%{background-image:0% 50%}
+    50%{background-image:100% 50%}
+    100%{background-image:0% 50%}
+}
+
+
 #home-bg {
     background:
     linear-gradient(
-        rgba(31, 31, 31, 0.45), 
-        rgba(1, 1, 1, 0.45)
+        rgba(185, 185, 185, 0.219), 
+        rgba(228, 214, 214, 0.26)
       ),
       url(../Assets/Images/INDEX.jpg);
     
@@ -22,90 +61,52 @@ max-width: 100%;
     height: 100%;
     margin-bottom: -20px;
 }
-
-.name {
-    font-family: "Anton";
-    color: white;
-    font-size: 50px;
-    text-transform: uppercase;
-}
-
-.title {
-    font-family: "Open Sans Condensed";
-    text-transform: uppercase;
-    font-style: italic;
-    color: #fff799;
-    margin-top: -10px;
-}
-
-.quote {
-    font-family: "Space Mono";
-    color: white;
-    font-size: 25px;
-}
-
-strong {
-    color: #fff799;
-}
-
-.malcom {
-    font-family: "Open Sans Condensed";
-    color: #333;
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-#home-btn{
-    background: transparent;
-    border-width:  2px;
-    border-style: solid;
-    border-color:#fff799;
-    color: white;
-    font-family: "Oswald";
-    text-transform: uppercase;
-  
-}
-
-/* About */
-
-aside {
-    background:linear-gradient(
-        rgba(31, 31, 31, 0.45), 
-        rgba(1, 1, 1, 0.45)
-      );
-      position: fixed;
-     height: 100%;
-      text-align: center;
-      color: white;
-}
-
-#aside-header {
-    font-family: "Anton";
-    text-transform: uppercase;
-    
-}
-#aside-btn {
-    background-color: #fff799;
-    color: #333;
-    font-family: "Oswald";
-    text-transform: uppercase;
-    padding: 10px;
+i{
+    color: #a3a1a1;
  
 }
+.contact-label{
+    font-family: "Space mono";
+    font-size: 14px;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 3px;
+    color: #333;
+}
+
+.contact-labela{
+    font-family: "Space mono";
+    font-size: 18px;
+    text-align: center;
+    margin-left: 18px;
+    margin-top: 3px;
+    color: white;
+}
+#bio-div{
+    margin-top: 30%;
+}
+
+#icon-div {
+    margin-top: 2%; 
+}
+
+#icon{
+   font-size:20px;
+   color: #333;
+}
+
+#icon:hover{
+background: black;
+    color: white;
+    text-decoration: none;
+ }
 
 #bio {
-    font-family: "Open Sans Condensed";
-    font-size: 20px;
+    font-family: "Vidaloka";
+    font-size: 45px;
+    color: #333;
 }
 
-#aside-nav{
-    margin-top: 200px;
-    margin-bottom: 200px;
-    
-}
 
 .btn {
     background-color: #fff799;
@@ -113,117 +114,412 @@ aside {
     font-family: "Oswald";
     text-transform: uppercase;
     border: none;
-}
- 
-
-/* Projects */
-
-#graphic-link-div{
-    margin-left: 14px;
-    height: 350px;
-    text-align: left;
-    font-family: "Oswald";
-    text-transform: uppercase;
-    font-style: italic;
-    background-color: #fff799;
-    width: auto;
-    margin-top: 45px;
-    border-radius: 0;
-    width: 100%;
    
 }
+ #nav-div{
+margin-top: 2%;
+margin-left: 80px;;
 
-#content-link-div{
-    margin-left: 14px;
-    height: 330px;
-    text-align: left;
-    font-family: "Oswald";
-    text-transform: uppercase;
-    font-style: italic;
-    width: auto;
-    border-radius: 0;
-    width: 100%;
+ }
 
-    
+#index-btn{
+    background: transparent;
+    color: #333;
+    border: none;
+   margin: 20px;
+ 
+    font-size: 10px;
+}
+
+#index-btn:hover{
+   background: black;
+   color: white;
 }
 
 
-/* Footer */
+
+/* Footer ##################################################*/
 footer {
     background-color: #333;
     color: white;
    width: 100%;
-   position: absolute;
+   position: fixed;
    bottom: 0;
    height: 60px;
-   margin-left: -15px;
+   text-align: center;
+
+}
+
+.footer-icons{
+   float: right;
+   margin-right: 20px;
+   margin: 10px;
+   
+}
+
+#footer-logo{
+    width: 30px;
+    margin-left: 8px;
+}
+
+#footer-icon{
+    font-size: 30px;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
 }
 
 
-/* Web Design */
+/* Web Design ##################################################*/
 
-.gallery_product{
-    width: 173px;
-    padding: 0;
+.web-title{
+    background-image: linear-gradient(to top,#ec008c, #fc6767);
+    font-family: "Space mono";
+    font-size:650%; 
+    position: absolute;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.web-title-div{
+   margin-left: 5%;
+}
+
+
+#web-back{
+    float: right;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 3%;
+}
+
+#web-back-btn{
+    background: transparent;
+    border: none;
+    font-family: "Space mono";
+    font-size: 15px;
+    color: #333;
+}
+
+#web-back-btn:hover{
+    background: black;
+    color: white;
+    border: none;
+    font-family: "Space mono";
+    font-size: 15px;
+}
+
+#web-row{
+    margin-top: 5%;
+    margin-left: -4%;
+}
+
+#website-title{
+    margin-top: -10%;
+    text-align: center;
+    font-family: "Anton";
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#website-description{
+    
+    text-align: center;
+    font-family: "Space mono";
+    font-size: 15px;
+}
+
+#web-details{
+   font-size: 11px;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #6995ee;
+    
+}
+
+
+.preview-btn{
+   
+    margin-bottom: 15%;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/* Graphic Design ##################################################*/
+
+#graph-back{
+   
+    margin-top: 3%;
+}
+
+#graph-back-btn{
+    background: black;
+    border: none;
+    font-family: "Space mono";
+    font-size: 15px;
+    color: white;
   
 }
 
-.padding-0{
-    padding-right:0;
-    padding-left:0;
+#graph-back-btn:hover{
+    background: white;
+    color: #333;
+    border: none;
+    font-family: "Space mono";
+    font-size: 15px;
+
 }
 
-img {
-    width:100%;
+#graph-arrow{
+    margin-left: 80%;
 }
 
-#img {
-    margin: auto;
+
+
+#graph-header{
+    font-family: "Space mono";
+    font-size: 250%;
+    text-align: center;
 }
 
-#web-link-div{
-    margin-left: 15px;
-    height: 400px;
-    text-align: left;
-    font-family: "Oswald";
-    text-transform: uppercase;
-    font-style: italic;
-    background-color: rgb(95, 156, 136);;
-    width: auto;
-    margin-top: 45px;
-    border-radius: 0;
+.div-holder{
+   margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#business-intro{
+    width: 75%;
+    margin-top: 15%;
+    margin-left: 12%;
+    margin-bottom: 10%;
+ }
+
+ #freelance-intro{
+    width: 65%;
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+ }
+
+.business{
     width: 100%;
+    height: 800px; 
+    position: relative; 
+    background: rgb(236, 236, 236); 
 }
 
-#graphics-link-div{
-    margin-left: 15px;
-    height: 400px;
-    text-align: left;
-    font-family: "Oswald";
-    text-transform: uppercase;
-    font-style: italic;
-    background-color: rgb(126, 146, 167);;
-    width: auto;
-    margin-top: 45px;
-    border-radius: 0;
-    width: 100%;
+.business:hover{
+    width: 100%;   
+    background: #fff799;
+    color: white; 
+    text-shadow: 2px 2px 8px #000000a9;
 }
 
-/* Contact */
-
-#contact-div{
+.freelance{
+    width: 100%;  
+    height: 800px; 
+    position: relative;
+    background: rgb(243, 243, 243);
     
-    height: 400px;
-    text-align: left;
-    font-family: "Oswald";
-    text-transform: uppercase;
-    font-style: italic;
-    background-color: rgb(95, 156, 136);;
-    width: auto;
-    margin-top: 45px;
-    border-radius: 0;
-    width: 100%;
+}
+
+.freelance:hover{
+    width: 100%;  
+    background: #4b6cb7; 
+    color: white; 
+    text-shadow: 2px 2px 8px #000000a9;
+    
 }
 
 
 
+
+/* FREEELANCE Design ##################################################*/
+
+.freelance-title{
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+    font-family: "Space mono";
+    font-size:650%; 
+    position: absolute;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.freelance-title-div{
+   margin-left: 5%;
+}
+
+
+#freelance-label{
+    position: relative;
+    width: 200px;
+    color: white;
+    background: #333;
+    font-family: "anton";
+    text-transform: uppercase;
+    font-size: 40px;
+  padding: 5px;
+  margin-left: 3%;
+
+}
+
+#filters-row{
+   
+    margin-top: 15%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 5%;
+}
+
+#flyers-row{
+  
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top:5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+#flyer{
+    width: 15%;
+    display: inline-block;
+    float: none;
+    margin-bottom: 30px;
+}
+
+
+#filter{
+    width: 15%;
+    margin-bottom: 30px;
+    display: inline-block;
+    float: none;
+}
+
+#content-bg {
+position: relative;
+}
+
+#freelance-row{
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+
+#freelance-back{
+   float: right;
+   margin-right: 5%;
+    margin-top: 3%;
+    color: #333;
+}
+
+#freelance-back-btn{
+    background: transparent;
+    border: none;
+    font-family: "Space mono";
+    font-size: 15px;
+    color: #333;
+}
+
+.fa-long-arrow-alt-left{
+  
+  color: #333;
+}
+
+#freelance-back-btn:hover{
+    background: black;
+    color: white;
+    border: none;
+    font-family: "Space mono";
+    font-size: 15px;
+}
+
+/* BUSINESS Design ##################################################*/
+#business-row{
+  
+    margin-top: 15%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 5%;
+}
+
+.business-title{
+    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+    font-family: "Space mono";
+    font-size:550%; 
+    position: absolute;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.business-title-div{
+   margin-left: 5%;
+}
+
+#bus-back{
+ 
+float: right;
+margin-right: 5%;
+     margin-top: 3%;
+     color: #333;
+ }
+ 
+ #bus-back-btn{
+     background: transparent;
+     border: none;
+     font-family: "Space mono";
+     font-size: 15px;
+     color: #333;
+ }
+ 
+ 
+ #bus-back-btn:hover{
+     background: black;
+     color: white;
+     border: none;
+     font-family: "Space mono";
+     font-size: 15px;
+ }
+
+ #business{
+    display: inline-block;
+    float: none;
+ }
+
+/* SKILLS BAR ##################################################*/
+
+#java-bar{
+background: black;
+}
+
+#react-bar{
+    background: black;
+    }
+#css-bar{
+background: black;
+}
+ #bs-bar{
+background: black;
+}
+#photo-bar{
+background: black;
+}
+#photo-bar{
+background: black;
+}
+/* KEY FRAMES ##################################################*/
+
+@keyframes logo {
+    0% {transform: rotateY(0deg);}
+    100% {transform: rotateY(360deg);}
+}
+
+  

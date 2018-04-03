@@ -8,107 +8,83 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="../Assets/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald|Anton|Open+Sans+Condensed:300|Space+Mono" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <title>Projects • Web Design</title>
 </head>
 
 <body>
     <div class="container-fluid">
-
-
-        <aside class="col-xs-4 col-md-3 col-lg-3">
-            <h1 id="aside-header">Web Design</h1>
-
-            <div id="content-nav">
-                <button id="project-btn"> Web Design </button>
-                <button id="project-btn"> Graphic Design </button>
+        <div class=" row  div-holder">
+            <div class="web-title-div" >
+                <h1 class="web-title">WEB DESIGN</h1>
             </div>
 
-
-
-            <div id="content-bg">
-                <p id="content-info">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                    including versions of Lorem Ipsum.
-                </p>
+            <div id="web-back">
+                <a href="../index.html">    <i class="fas fa-long-arrow-alt-left"></i> <button id="web-back-btn">BACK</button></a>
             </div>
-            <!-- Nav Buttons -->
-            <div id="aside-nav" class="row">
-                    <div class="col-xs-3 col-md-3 col-lg-3">
-                            <a href="../Public/about.html">
-                                <button id="home-btn" class="btn btn-default"> About</button>
-                            </a>
-                        </div>
-                       
-                        <div class="col-xs-3 col-md-3 col-lg-3">
-                                <a href="../Public/projects-home.html">
-                                    <button id="home-btn" class="btn btn-default"> Project</button>
-                                </a>
-                        </div>
-                        <div class="col-xs-3 col-md-3 col-lg-3">
-                            <a href="../Public/contact.html">
-                                <button id="home-btn" class="btn btn-default"> Contact</button>
-                            </a>
-                        </div>
-            </div>
-        </aside>
 
-
-
-        <div class="col-md-offset-3">
-            <div class="row ">
-                <div id="content-link-div" class="jumbotron">
-                    <h1 id="content-link">Web Design</h1>
+            <div class="row" id="web-row">
+                <div class="col-md-6 col-lg-6" id="web">
+                    <img class="img-responsive"  src="../Assets/Images/psychic-game.png" alt="" />
+                    <h4 id="website-title">Mystery Letter Game</h4>
+                    <p id="website-description">Test your luck, and see how many correct letters you can guess in a row.</p>
+                    <p id="web-details"><i class="far fa-question-circle"></i> This website was built using HTML/CSS and JavaScript</p>
+                    <a href="https://briajnae.github.io/Psychic-Game/">   <button class="preview-btn btn btn-block">preview</button></a>
                 </div>
-                <div id="web-link-div" class="jumbotron">
-
-                    <div id="img" class="col-md-3 col-lg-3 padding-0">
-                        <img src="../Assets/Images/INDEX.jpg" alt="">
-                    </div>
-
-                    <div id="img" class="col-md-3 col-lg-3 padding-0">
-                        <img src="../Assets/Images/INDEX.jpg" alt="">
-                    </div>
-
-                    <div id="img" class="col-md-3 col-lg-3 padding-0">
-                        <img src="../Assets/Images/INDEX.jpg" alt="">
-                    </div>
-
-                    <div id="img" class="col-md-3 col-lg-3 padding-0">
-                        <img src="../Assets/Images/INDEX.jpg" alt="">
-                    </div>
-
-                    <div id="img" class="col-md-3 col-lg-3 padding-0">
-                        <img src="../Assets/Images/INDEX.jpg" alt="">
-                    </div>
-
-                    <div id="img" class="col-md-3 col-lg-3 padding-0">
-                        <img src="../Assets/Images/INDEX.jpg" alt="">
-                    </div>
-
-                    <div id="img" class="col-md-3 col-lg-3 padding-0">
-                        <img src="../Assets/Images/INDEX.jpg" alt="">
-                    </div>
-
-                    <div id="img" class="col-md-3 col-lg-3 padding-0">
-                        <img src="../Assets/Images/INDEX.jpg" alt="">
-                    </div>
+                <div class="col-md-6 col-lg-6" id="web">
+                    <img class="img-responsive"  src="../Assets/Images/trip-buddy.png" alt="" />
+                    <h4 id="website-title">Trip Buddy</h4>
+                    <p id="website-description">TripBuddy lets you create and save packing lists for upcoming trips, and displays trip weather based on the trip's destination and travel dates.</p>
+                    <p id="web-details"><i class="far fa-question-circle"></i> This website was built using Bootstrap, jQuery and JavaScript 
+                        <br> <b>Lead UI designer</b> </p>
+                    <a href="https://laurencantlin.github.io/Packing-List/">  <button  class="preview-btn btn btn-block">preview</button></a>
                 </div>
-            </div>
+
+                    <div class="col-md-6 col-lg-6" id="web">
+                            <img class="img-responsive"  src="../Assets/Images/housewives-showdown.png" alt="" />
+                            <h4 id="website-title">Housewives Showdown</h4>
+                            <p id="website-description">Drama never seems to miss these housewives. See who's the sassiest of them all with this Atlanta Housewives inspired RPG web game.</p>
+                            <p id="web-details"><i class="far fa-question-circle"></i> This website was built using Bootstrap, jQuery and JavaScript</p>
+                            <a href="https://briajnae.github.io/week-4-game/">  <button  class="preview-btn btn btn-block">preview</button></a>
+                    </div>
+                    <div class="col-md-6 col-lg-6" id="web">
+                        <img class="img-responsive"  src="../Assets/Images/homey.png" alt="" />
+                        <h4 id="website-title">Homey</h4>
+                        <p id="website-description">Homey is a user-friendly web application to help Chicagoans find affordable rental housing developments within the city.</p>
+                        <p id="web-details"><i class="far fa-question-circle"></i> This website was built using Bootstrap, jQuery, mySQL, Node.js, and JavaScript 
+                            <br> <b>Project Manager • lead UI designer </b></p>
+                        <a href="https://homey-app-bjs.herokuapp.com/">  <button  class="preview-btn btn btn-block">preview</button></a>
+                    </div>
+
+
         </div>
+
+
+
+       
+
 
 
         <footer class="footer">
             <div class="container">
             </div>
-            <span>Creative Square </span>
+           
+            <div class="footer-icons">
+                    <a href="https://github.com/briajnae">    <i id="footer-icon" class="fab fa-github-square" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/briajwalker">   <i id="footer-icon" class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="../index.html"> <img id="footer-logo" src="../Assets/Images/white-logo.png" alt=""></a>
+            </div>
+
         </footer>
     </div>
-    <script src="Assets/javascript.js"></script>
+
+
 </body>
 
 </html>
